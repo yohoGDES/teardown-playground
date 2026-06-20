@@ -122,6 +122,18 @@ git clone https://github.com/yohogdes/teardown-playground.git
 
 ## Branching
 
-- `main` — stable, tested mods only
+- `master` — stable, tested mods only (default branch)
 - `claude/*` — active development branches (Claude Code sessions)
 - Feature branches: `feat/<mod-name>/<description>`
+
+## Push Workflow (Claude Code Web)
+
+Claude Code web sessions cannot push directly to GitHub (connector is read-only).
+Workflow: Claude writes files here → sends them as downloads → commit from Mac:
+
+```bash
+cd ~/Documents/Sites/teardown-playground
+git add -A
+git commit -m "your message"
+git push -u origin master
+```

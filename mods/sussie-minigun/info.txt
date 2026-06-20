@@ -1,0 +1,4 @@
+name = Sussie Minigun
+author = Ollie & Dad
+version = 0.1
+description = A rapid-fire minigun that shoots explosive sussies (Among Us crewmates). Left-click to fire. Watch out!
