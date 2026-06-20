@@ -91,7 +91,9 @@ python scripts/fetch_docs.py
 The game also ships `script_defs.lua` and `voxscript_defs.lua` inside the Teardown install
 directory — copy these into `docs/` from the Steam Deck for IDE autocomplete support.
 
-Steam Deck path: `~/.steam/steam/steamapps/common/Teardown/`
+Steam Deck paths (Teardown runs under Proton, so paths are inside the Wine prefix):
+- Game install: `~/.local/share/Steam/steamapps/common/Teardown/`
+- User mods: `~/.local/share/Steam/steamapps/compatdata/1167630/pfx/drive_c/users/steamuser/Documents/Teardown/mods/`
 
 ## Deploy / Test Workflow
 
@@ -99,14 +101,14 @@ Steam Deck path: `~/.steam/steam/steamapps/common/Teardown/`
 2. `git push` to GitHub
 3. On Steam Deck (Konsole, Desktop Mode):
    ```bash
-   cd ~/.local/share/Teardown/mods/teardown-playground
+   cd ~/.local/share/Steam/steamapps/compatdata/1167630/pfx/drive_c/users/steamuser/Documents/Teardown/mods/teardown-playground
    git pull
    ```
 4. Launch Teardown → Mods menu → enable the mod → test
 
 First-time setup on Steam Deck:
 ```bash
-cd ~/.local/share/Teardown/mods/
+cd ~/.local/share/Steam/steamapps/compatdata/1167630/pfx/drive_c/users/steamuser/Documents/Teardown/mods/
 git clone https://github.com/yohogdes/teardown-playground.git
 ```
 

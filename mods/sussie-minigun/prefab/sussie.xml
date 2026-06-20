@@ -1,0 +1,7 @@
+<prefab version="1.5.4">
+	<group name="sussie">
+		<body dynamic="true">
+			<vox file="MOD/assets/sussie.vox" scale="0.2"/>
+		</body>
+	</group>
+</prefab>
